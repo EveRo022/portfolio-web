@@ -1,0 +1,175 @@
+p {
+    color: rgb(36, 2, 33);
+    background-color: violet;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: normal;
+    text-align: justify;
+}
+
+body {
+    background: #f6f5f7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c6f00a
+}
+
+header {
+    background-color: #702a59;
+    color: #bb8bab;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+section {
+    color: rgb(250, 55, 6);
+    border: 2px rgb(54, 65, 3) solid;
+    margin: 20px;
+    padding: 20px
+}
+
+title {
+    color: rgb(228, 74, 13);
+
+}
+
+h1 {
+    color: rgb(236, 19, 146);
+    margin-top: 2px;
+}
+
+li {
+    color: violet;
+}
+
+h2 {
+    color: rgb(207, 10, 164);
+    margin-bottom: 10px;
+}
+
+nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #f16ab9;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 20px;
+    border: 1px solid #e40976;
+    margin-bottom: 20px;
+}
+
+#acerca-de-mi p {
+    text-align: justify;
+}
+
+#habilidades ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#habilidades ul li {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#experiencia ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#experiencia ul li {
+    margin-bottom: 10px;
+}
+
+#experiencia ul li strong {
+    font-weight: bold;
+}
+
+#proyectos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#proyectos ul li {
+    margin-bottom: 10px;
+}
+
+#proyectos ul li a {
+    text-decoration: magenta;
+    color: #eb78b1;
+}
+
+#proyectos ul li a:hover {
+    text-decoration: underline;
+}
+
+#contacto form {
+    margin: 0 auto;
+    width: 500px;
+}
+
+#contacto form input,
+#contacto form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+#contacto form imput {
+    type: "submit"
+}
+
+#contacto form input[type="submit"] {
+    background-color: #d83f3f;
+    color: #f08181;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-fijo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-fijo.fijo {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.animation-titulo {
+    animation: aparecer 3s ease-in-out;
+}
+
+@keyframes aparecer {
+    form {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
