@@ -1,130 +1,115 @@
-p {
-    color: rgb(36, 2, 33);
-    background-color: violet;
-    font-size: larger;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    letter-spacing: normal;
-    text-align: justify;
-}
-
+/* Estilos generales */
 body {
-    background: #f6f5f7;
+    background: #ebeff5;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #c6f00a
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
+/* Cabecera */
 header {
-    background-color: #702a59;
-    color: #bb8bab;
+    background-color: #2a2a2b;
+    color: #fff;
     text-align: center;
     padding: 20px;
     margin-bottom: 20px;
 }
 
+header h1,
+header h2 {
+    margin: 5px 0;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul a:hover {
+    background-color: #8a97e7;
+    color: rgb(45, 245, 5);
+    border-radius: 5px;
+}
+
+/* Secciones */
 section {
-    color: rgb(250, 55, 6);
-    border: 2px rgb(54, 65, 3) solid;
+    background-color: #f5f5fa;
+    color: #333;
+    border: 2px solid #ddd;
     margin: 20px;
-    padding: 20px
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-title {
-    color: rgb(228, 74, 13);
-
+/* Encabezados */
+h1,
+h2 {
+    color: #f3f3f7;
 }
 
-h1 {
-    color: rgb(236, 19, 146);
-    margin-top: 2px;
+.title {
+    color: #202020;
+}
+
+/* Párrafos */
+p {
+    background-color: #b8daf1;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 li {
-    color: violet;
-}
-
-h2 {
-    color: rgb(207, 10, 164);
+    color: #303131;
     margin-bottom: 10px;
-}
-
-nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-nav a:hover {
-    background-color: #f16ab9;
-}
-
-main {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-section {
-    padding: 20px;
-    border: 1px solid #e40976;
-    margin-bottom: 20px;
-}
-
-#acerca-de-mi p {
-    text-align: justify;
-}
-
-#habilidades ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 #habilidades ul li {
     display: inline-block;
     padding: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #5341a3;
     border-radius: 5px;
     margin-right: 10px;
+    background-color: #b8daf1;
+    color: #1313f3;
 }
 
-#experiencia ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Enlaces */
+a {
+    color: #3f51b5;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-#experiencia ul li {
-    margin-bottom: 10px;
+a:hover {
+    color: #303f9f;
 }
 
-#experiencia ul li strong {
-    font-weight: bold;
-}
-
-#proyectos ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#proyectos ul li {
-    margin-bottom: 10px;
-}
-
-#proyectos ul li a {
-    text-decoration: magenta;
-    color: #eb78b1;
-}
-
-#proyectos ul li a:hover {
-    text-decoration: underline;
-}
-
+/* Formularios */
 #contacto form {
     margin: 0 auto;
-    width: 500px;
+    width: 250px;
 }
 
 #contacto form input,
@@ -133,19 +118,37 @@ section {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
-}
-
-#contacto form imput {
-    type: "submit"
+    border-radius: 5px;
 }
 
 #contacto form input[type="submit"] {
-    background-color: #d83f3f;
-    color: #f08181;
+    background-color: #b8daf1;
+    color: #fff;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
+#contacto form input[type="submit"]:hover {
+    background-color: #b8daf1;
+}
+
+/* Animación */
+.animation-titulo {
+    animation: aparecer 3s ease-in-out;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Menú fijo */
 .menu-fijo {
     position: fixed;
     top: 0;
@@ -156,20 +159,19 @@ section {
 }
 
 .menu-fijo.fijo {
-    background-color: #fff;
+    background-color: #080808;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.animation-titulo {
-    animation: aparecer 3s ease-in-out;
+/* Footer */
+footer {
+    background-color: #202020;
+    color: #f2f7f2;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
 
-@keyframes aparecer {
-    form {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+#base {
+    color: #f1f2f5;
 }
